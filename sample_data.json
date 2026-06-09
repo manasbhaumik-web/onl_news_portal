@@ -1,0 +1,653 @@
+{
+  "database": "dispatch_portal",
+  "generated_at": "2024-01-15T00:00:00Z",
+  "description": "Realistic seed data for Dispatch News Portal — all ObjectIds are consistent across collections",
+
+  "categories": [
+    {
+      "_id": { "$oid": "65a1000000000000000000c1" },
+      "name": "Politics", "slug": "politics",
+      "description": "Political news, elections, governance and policy coverage.",
+      "parent_id": null, "color": "#DC2626", "icon": "landmark",
+      "cover_image": "https://dispatch.media/categories/politics.jpg",
+      "sort_order": 1, "status": "active",
+      "meta": { "title": "Politics News", "description": "Latest political news and analysis.", "keywords": ["politics","government","elections"] },
+      "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000c2" },
+      "name": "Technology", "slug": "technology",
+      "description": "Tech industry, AI, gadgets, software and innovation.",
+      "parent_id": null, "color": "#7C3AED", "icon": "cpu",
+      "cover_image": "https://dispatch.media/categories/technology.jpg",
+      "sort_order": 3, "status": "active",
+      "meta": { "title": "Technology News", "description": "Latest tech news and gadget reviews.", "keywords": ["technology","ai","gadgets"] },
+      "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000c3" },
+      "name": "Business", "slug": "business",
+      "description": "Markets, economy, companies, finance and commerce.",
+      "parent_id": null, "color": "#2563EB", "icon": "briefcase",
+      "cover_image": "https://dispatch.media/categories/business.jpg",
+      "sort_order": 2, "status": "active",
+      "meta": { "title": "Business News", "description": "Business and finance news.", "keywords": ["business","markets","economy"] },
+      "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" }
+    }
+  ],
+
+  "tags": [
+    { "_id": { "$oid": "65a1000000000000000000d1" }, "name": "Artificial Intelligence", "slug": "artificial-intelligence", "description": "AI, ML, LLMs.", "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" } },
+    { "_id": { "$oid": "65a1000000000000000000d2" }, "name": "Elections", "slug": "elections", "description": "Electoral politics worldwide.", "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" } },
+    { "_id": { "$oid": "65a1000000000000000000d3" }, "name": "Startup", "slug": "startup", "description": "Startup ecosystem news.", "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" } },
+    { "_id": { "$oid": "65a1000000000000000000d4" }, "name": "Climate Change", "slug": "climate-change", "description": "Climate and environment.", "article_count": 0, "created_at": { "$date": "2023-01-01T00:00:00Z" }, "updated_at": { "$date": "2023-01-01T00:00:00Z" } }
+  ],
+
+  "authors": [
+    {
+      "_id": { "$oid": "65a1000000000000000000a1" },
+      "user_id": null,
+      "name": "Sarah Mitchell", "slug": "sarah-mitchell",
+      "email": "sarah.mitchell@dispatch.news",
+      "bio": "Political correspondent with 12 years covering Washington D.C. and international affairs. Pulitzer Prize finalist 2022.",
+      "avatar": "https://dispatch.media/authors/sarah-mitchell.jpg",
+      "title": "Senior Political Correspondent",
+      "social_links": { "twitter": "@sarahmitchell_dc", "linkedin": "sarah-mitchell-journalist", "instagram": null, "website": null },
+      "expertise": ["US Politics", "Foreign Policy", "Elections"],
+      "article_count": 0, "status": "active", "role": "author",
+      "joined_date": { "$date": "2019-03-15T00:00:00Z" },
+      "created_at": { "$date": "2019-03-15T00:00:00Z" }, "updated_at": { "$date": "2024-01-01T00:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000a2" },
+      "user_id": null,
+      "name": "James Thornton", "slug": "james-thornton",
+      "email": "james.thornton@dispatch.news",
+      "bio": "Technology journalist and editor. Former software engineer turned writer. Covers AI, startups, and Silicon Valley.",
+      "avatar": "https://dispatch.media/authors/james-thornton.jpg",
+      "title": "Technology Editor",
+      "social_links": { "twitter": "@jthornton_tech", "linkedin": "james-thornton-tech", "instagram": null, "website": "https://jamesthornton.io" },
+      "expertise": ["Artificial Intelligence", "Startups", "Cybersecurity"],
+      "article_count": 0, "status": "active", "role": "editor",
+      "joined_date": { "$date": "2020-07-01T00:00:00Z" },
+      "created_at": { "$date": "2020-07-01T00:00:00Z" }, "updated_at": { "$date": "2024-01-01T00:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000a3" },
+      "user_id": null,
+      "name": "Priya Sharma", "slug": "priya-sharma",
+      "email": "priya.sharma@dispatch.news",
+      "bio": "Business and economics reporter covering global markets, trade policy, and emerging economies.",
+      "avatar": "https://dispatch.media/authors/priya-sharma.jpg",
+      "title": "Business Reporter",
+      "social_links": { "twitter": "@priyasharma_biz", "linkedin": "priya-sharma-dispatch", "instagram": null, "website": null },
+      "expertise": ["Global Markets", "Economy", "Trade Policy"],
+      "article_count": 0, "status": "active", "role": "author",
+      "joined_date": { "$date": "2021-01-20T00:00:00Z" },
+      "created_at": { "$date": "2021-01-20T00:00:00Z" }, "updated_at": { "$date": "2024-01-01T00:00:00Z" }
+    }
+  ],
+
+  "users": [
+    {
+      "_id": { "$oid": "65a1000000000000000000u1" },
+      "username": "alex_chen", "email": "alex.chen@example.com",
+      "password_hash": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewgGsT4sZmCgq2Ci",
+      "status": "active", "role": "user", "email_verified": true,
+      "email_verify_token": null, "password_reset_token": null, "password_reset_expires": null,
+      "profile": {
+        "first_name": "Alex", "last_name": "Chen", "display_name": "Alex Chen",
+        "bio": "Tech enthusiast and avid news reader based in Singapore.",
+        "avatar": "https://dispatch.media/users/alex-chen.jpg",
+        "country": "Singapore", "city": "Singapore",
+        "social_links": { "twitter": "@alexchen_sg" }
+      },
+      "subscription_tier": "premium",
+      "preferences": {
+        "newsletter_subscribed": true, "breaking_news_alerts": true,
+        "email_digest": "daily",
+        "preferred_categories": [{ "$oid": "65a1000000000000000000c2" }],
+        "preferred_tags": [{ "$oid": "65a1000000000000000000d1" }],
+        "dark_mode": true, "font_size": "medium", "language": "en"
+      },
+      "reading_history": [],
+      "two_factor_enabled": false, "two_factor_secret": null,
+      "login_attempts": 0, "locked_until": null, "api_keys": [],
+      "last_login": { "$date": "2024-01-14T08:30:00Z" },
+      "registered_at": { "$date": "2022-06-15T00:00:00Z" }, "updated_at": { "$date": "2024-01-14T08:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000u2" },
+      "username": "maria_garcia", "email": "maria.garcia@example.com",
+      "password_hash": "$2b$12$XYZhN8/LewgGsT4sZmCgq2CiLQv3c1yqBWVHxkd0LHAkCOYz6TtxM",
+      "status": "active", "role": "user", "email_verified": true,
+      "email_verify_token": null, "password_reset_token": null, "password_reset_expires": null,
+      "profile": {
+        "first_name": "Maria", "last_name": "Garcia", "display_name": "Maria Garcia",
+        "bio": "Political junkie and armchair economist from Madrid.",
+        "avatar": "https://dispatch.media/users/maria-garcia.jpg",
+        "country": "Spain", "city": "Madrid",
+        "social_links": {}
+      },
+      "subscription_tier": "professional",
+      "preferences": {
+        "newsletter_subscribed": true, "breaking_news_alerts": true,
+        "email_digest": "weekly",
+        "preferred_categories": [{ "$oid": "65a1000000000000000000c1" }, { "$oid": "65a1000000000000000000c3" }],
+        "preferred_tags": [{ "$oid": "65a1000000000000000000d2" }],
+        "dark_mode": false, "font_size": "large", "language": "en"
+      },
+      "reading_history": [],
+      "two_factor_enabled": true, "two_factor_secret": "JBSWY3DPEHPK3PXP",
+      "login_attempts": 0, "locked_until": null, "api_keys": [],
+      "last_login": { "$date": "2024-01-15T07:00:00Z" },
+      "registered_at": { "$date": "2021-11-03T00:00:00Z" }, "updated_at": { "$date": "2024-01-15T07:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000u3" },
+      "username": "davidO_reads", "email": "david.okonkwo@example.com",
+      "password_hash": "$2b$12$ABChN8/LewgGsT4sZmCgq2CiLQv3c1yqBWVHxkd0LHAkCOYz6Ttx9",
+      "status": "active", "role": "user", "email_verified": false,
+      "email_verify_token": "verify_token_xyz789",
+      "password_reset_token": null, "password_reset_expires": null,
+      "profile": {
+        "first_name": "David", "last_name": "Okonkwo", "display_name": "David O.",
+        "bio": null, "avatar": null, "country": "Nigeria", "city": "Lagos",
+        "social_links": {}
+      },
+      "subscription_tier": "free",
+      "preferences": {
+        "newsletter_subscribed": false, "breaking_news_alerts": false,
+        "email_digest": "none", "preferred_categories": [], "preferred_tags": [],
+        "dark_mode": false, "font_size": "medium", "language": "en"
+      },
+      "reading_history": [],
+      "two_factor_enabled": false, "two_factor_secret": null,
+      "login_attempts": 0, "locked_until": null, "api_keys": [],
+      "last_login": null,
+      "registered_at": { "$date": "2024-01-10T14:22:00Z" }, "updated_at": { "$date": "2024-01-10T14:22:00Z" }
+    }
+  ],
+
+  "articles": [
+    {
+      "_id": { "$oid": "65a1000000000000000000b1" },
+      "title": "AI Regulation Summit Reaches Historic Accord in Geneva",
+      "slug": "ai-regulation-summit-historic-accord-geneva-2024",
+      "subtitle": "Global leaders agree on binding framework for AI development",
+      "excerpt": "World leaders gathering in Geneva have reached a landmark agreement on artificial intelligence governance, setting binding targets for safety and transparency.",
+      "content": "<p>World leaders and technology executives gathering at the Geneva AI Regulation Summit have signed a landmark accord establishing the first-ever internationally binding framework for artificial intelligence governance...</p><p>The agreement, endorsed by 47 nations, mandates rigorous third-party auditing of large AI models before deployment and requires transparency disclosures for systems used in critical infrastructure...</p>",
+      "content_format": "html",
+      "author_id": { "$oid": "65a1000000000000000000a2" },
+      "co_authors": [],
+      "editor_id": null,
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "tags": [{ "$oid": "65a1000000000000000000d1" }],
+      "format": "breaking",
+      "featured_image": {
+        "media_id": { "$oid": "65a1000000000000000000m1" },
+        "url": "https://dispatch.media/images/ai-summit-2024.jpg",
+        "alt": "World leaders at the AI Regulation Summit in Geneva",
+        "caption": "Delegates sign the Geneva AI Accord at the Palais des Nations",
+        "credit": "Reuters / AFP"
+      },
+      "media_attachments": [], "gallery": [],
+      "status": "published",
+      "published_at": { "$date": "2024-01-15T06:00:00Z" }, "scheduled_at": null,
+      "created_at": { "$date": "2024-01-14T20:00:00Z" }, "updated_at": { "$date": "2024-01-15T06:00:00Z" }, "archived_at": null,
+      "is_breaking": true, "is_featured": true, "featured_position": 1,
+      "is_sponsored": false, "is_paywalled": false,
+      "breaking_expires_at": { "$date": "2024-01-15T18:00:00Z" },
+      "view_count": 47823, "unique_view_count": 38210, "share_count": 2341,
+      "comment_count": 184, "bookmark_count": 891, "like_count": 3210,
+      "estimated_reading_time": 6,
+      "related_articles": [{ "$oid": "65a1000000000000000000b2" }],
+      "meta": {
+        "title": "AI Regulation Summit Reaches Historic Accord | Dispatch",
+        "description": "47 nations sign the Geneva AI Accord establishing binding artificial intelligence governance framework.",
+        "keywords": ["AI regulation","Geneva AI Accord","artificial intelligence governance"],
+        "canonical": "https://dispatch.news/technology/ai-regulation-summit-historic-accord-geneva-2024",
+        "og_image": "https://dispatch.media/images/ai-summit-2024-og.jpg",
+        "no_index": false
+      },
+      "newsletter_included": true, "newsletter_id": { "$oid": "65a1000000000000000000n1" },
+      "revision": 3,
+      "version_history": [
+        { "revision": 1, "modified_by": { "$oid": "65a1000000000000000000a2" }, "modified_at": { "$date": "2024-01-14T20:00:00Z" }, "summary": "Initial draft" },
+        { "revision": 2, "modified_by": { "$oid": "65a1000000000000000000a2" }, "modified_at": { "$date": "2024-01-14T22:30:00Z" }, "summary": "Added quote from EU Commission" },
+        { "revision": 3, "modified_by": { "$oid": "65a1000000000000000000a2" }, "modified_at": { "$date": "2024-01-15T05:45:00Z" }, "summary": "Updated with final signing ceremony details" }
+      ]
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000b2" },
+      "title": "OpenAI's GPT-5 Passes Turing Test With 94% Success Rate",
+      "slug": "openai-gpt5-passes-turing-test-94-percent",
+      "subtitle": "Latest model fools human judges in controlled study at MIT",
+      "excerpt": "Researchers at MIT confirm that OpenAI's latest language model convincingly passed Turing tests in a landmark blind study, raising fresh ethical questions.",
+      "content": "<p>A peer-reviewed study published in Nature AI confirms that OpenAI's GPT-5 successfully deceived 94% of human evaluators in a series of structured Turing tests...</p>",
+      "content_format": "html",
+      "author_id": { "$oid": "65a1000000000000000000a2" },
+      "co_authors": [],
+      "editor_id": null,
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "tags": [{ "$oid": "65a1000000000000000000d1" }],
+      "format": "news",
+      "featured_image": {
+        "media_id": { "$oid": "65a1000000000000000000m2" },
+        "url": "https://dispatch.media/images/gpt5-turing.jpg",
+        "alt": "Abstract AI brain illustration",
+        "caption": null, "credit": "Dispatch / Illustration"
+      },
+      "media_attachments": [], "gallery": [],
+      "status": "published",
+      "published_at": { "$date": "2024-01-13T10:30:00Z" }, "scheduled_at": null,
+      "created_at": { "$date": "2024-01-13T09:00:00Z" }, "updated_at": { "$date": "2024-01-13T10:30:00Z" }, "archived_at": null,
+      "is_breaking": false, "is_featured": true, "featured_position": 2,
+      "is_sponsored": false, "is_paywalled": false, "breaking_expires_at": null,
+      "view_count": 31450, "unique_view_count": 26800, "share_count": 1890,
+      "comment_count": 312, "bookmark_count": 654, "like_count": 2100,
+      "estimated_reading_time": 8,
+      "related_articles": [{ "$oid": "65a1000000000000000000b1" }],
+      "meta": {
+        "title": "OpenAI GPT-5 Passes Turing Test | Dispatch Technology",
+        "description": "MIT study confirms GPT-5 fools 94% of human evaluators in structured Turing tests.",
+        "keywords": ["GPT-5","Turing Test","OpenAI","artificial intelligence"],
+        "canonical": "https://dispatch.news/technology/openai-gpt5-passes-turing-test-94-percent",
+        "og_image": "https://dispatch.media/images/gpt5-turing-og.jpg",
+        "no_index": false
+      },
+      "newsletter_included": false, "newsletter_id": null,
+      "revision": 1, "version_history": []
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000b3" },
+      "title": "Federal Reserve Signals Three Rate Cuts in 2024 Amid Cooling Inflation",
+      "slug": "fed-signals-three-rate-cuts-2024-cooling-inflation",
+      "subtitle": "Minutes reveal policymakers growing confident that inflation is under control",
+      "excerpt": "Federal Reserve minutes released Wednesday suggest policymakers are increasingly confident that inflation has been tamed, pointing toward three quarter-point cuts this year.",
+      "content": "<p>Minutes from the Federal Reserve's January meeting reveal a central bank growing more confident in its battle against inflation, with several members expressing support for three rate cuts in 2024...</p>",
+      "content_format": "html",
+      "author_id": { "$oid": "65a1000000000000000000a3" },
+      "co_authors": [],
+      "editor_id": null,
+      "category_id": { "$oid": "65a1000000000000000000c3" },
+      "tags": [],
+      "format": "analysis",
+      "featured_image": {
+        "media_id": { "$oid": "65a1000000000000000000m3" },
+        "url": "https://dispatch.media/images/fed-rate-2024.jpg",
+        "alt": "Federal Reserve building in Washington D.C.",
+        "caption": "The Federal Reserve headquarters on Constitution Ave.", "credit": "AP Photo"
+      },
+      "media_attachments": [], "gallery": [],
+      "status": "published",
+      "published_at": { "$date": "2024-01-12T14:00:00Z" }, "scheduled_at": null,
+      "created_at": { "$date": "2024-01-12T11:00:00Z" }, "updated_at": { "$date": "2024-01-12T14:00:00Z" }, "archived_at": null,
+      "is_breaking": false, "is_featured": false, "featured_position": null,
+      "is_sponsored": false, "is_paywalled": true, "breaking_expires_at": null,
+      "view_count": 18920, "unique_view_count": 15600, "share_count": 743,
+      "comment_count": 89, "bookmark_count": 420, "like_count": 880,
+      "estimated_reading_time": 7,
+      "related_articles": [],
+      "meta": {
+        "title": "Fed Signals Three Rate Cuts 2024 | Dispatch Business",
+        "description": "Federal Reserve minutes signal three rate cuts in 2024 as inflation cools.",
+        "keywords": ["Federal Reserve","interest rates","inflation","2024"],
+        "canonical": "https://dispatch.news/business/fed-signals-three-rate-cuts-2024-cooling-inflation",
+        "og_image": "https://dispatch.media/images/fed-rate-2024-og.jpg",
+        "no_index": false
+      },
+      "newsletter_included": false, "newsletter_id": null,
+      "revision": 2, "version_history": []
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000b4" },
+      "title": "Senate Passes Sweeping Immigration Reform Bill 68-32",
+      "slug": "senate-passes-immigration-reform-bill-68-32",
+      "subtitle": "Bipartisan deal includes path to citizenship for 11 million undocumented residents",
+      "excerpt": "The U.S. Senate passed a landmark bipartisan immigration reform bill in a 68-32 vote, sending it to the House where its fate remains uncertain.",
+      "content": "<p>In a rare moment of bipartisan unity, the U.S. Senate voted 68-32 to pass sweeping immigration reform legislation that would create a path to citizenship for approximately 11 million undocumented residents...</p>",
+      "content_format": "html",
+      "author_id": { "$oid": "65a1000000000000000000a1" },
+      "co_authors": [],
+      "editor_id": null,
+      "category_id": { "$oid": "65a1000000000000000000c1" },
+      "tags": [{ "$oid": "65a1000000000000000000d2" }],
+      "format": "news",
+      "featured_image": {
+        "media_id": { "$oid": "65a1000000000000000000m4" },
+        "url": "https://dispatch.media/images/senate-immigration.jpg",
+        "alt": "U.S. Senate chamber during vote",
+        "caption": "Senators on the floor during the historic immigration vote.", "credit": "C-SPAN / Pool"
+      },
+      "media_attachments": [], "gallery": [],
+      "status": "published",
+      "published_at": { "$date": "2024-01-11T20:45:00Z" }, "scheduled_at": null,
+      "created_at": { "$date": "2024-01-11T18:00:00Z" }, "updated_at": { "$date": "2024-01-11T20:45:00Z" }, "archived_at": null,
+      "is_breaking": false, "is_featured": true, "featured_position": 3,
+      "is_sponsored": false, "is_paywalled": false, "breaking_expires_at": null,
+      "view_count": 52300, "unique_view_count": 44100, "share_count": 3120,
+      "comment_count": 541, "bookmark_count": 1200, "like_count": 4890,
+      "estimated_reading_time": 9,
+      "related_articles": [],
+      "meta": {
+        "title": "Senate Passes Immigration Reform Bill | Dispatch Politics",
+        "description": "U.S. Senate passes landmark bipartisan immigration reform 68-32 with path to citizenship.",
+        "keywords": ["immigration reform","U.S. Senate","bipartisan","citizenship"],
+        "canonical": "https://dispatch.news/politics/senate-passes-immigration-reform-bill-68-32",
+        "og_image": "https://dispatch.media/images/senate-immigration-og.jpg",
+        "no_index": false
+      },
+      "newsletter_included": true, "newsletter_id": null,
+      "revision": 1, "version_history": []
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000b5" },
+      "title": "Apple Vision Pro Sells Out Within 24 Hours of Launch",
+      "slug": "apple-vision-pro-sells-out-24-hours-launch",
+      "subtitle": "Mixed reality headset beats pre-order expectations by 3x",
+      "excerpt": "Apple's groundbreaking Vision Pro spatial computing headset has sold out across all channels within 24 hours of its launch, with wait times extending to March.",
+      "content": "<p>Apple's $3,499 Vision Pro spatial computing headset sold out within 24 hours of becoming available, smashing the company's own internal pre-order projections by a factor of three...</p>",
+      "content_format": "html",
+      "author_id": { "$oid": "65a1000000000000000000a2" },
+      "co_authors": [],
+      "editor_id": null,
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "tags": [{ "$oid": "65a1000000000000000000d3" }],
+      "format": "news",
+      "featured_image": {
+        "media_id": { "$oid": "65a1000000000000000000m5" },
+        "url": "https://dispatch.media/images/apple-vision-pro.jpg",
+        "alt": "Apple Vision Pro headset on display",
+        "caption": "The Apple Vision Pro on display at an Apple Store.", "credit": "Apple Inc."
+      },
+      "media_attachments": [], "gallery": [],
+      "status": "published",
+      "published_at": { "$date": "2024-01-10T16:00:00Z" }, "scheduled_at": null,
+      "created_at": { "$date": "2024-01-10T14:00:00Z" }, "updated_at": { "$date": "2024-01-10T16:00:00Z" }, "archived_at": null,
+      "is_breaking": false, "is_featured": false, "featured_position": null,
+      "is_sponsored": false, "is_paywalled": false, "breaking_expires_at": null,
+      "view_count": 28900, "unique_view_count": 24300, "share_count": 1650,
+      "comment_count": 208, "bookmark_count": 560, "like_count": 1980,
+      "estimated_reading_time": 5,
+      "related_articles": [{ "$oid": "65a1000000000000000000b2" }],
+      "meta": {
+        "title": "Apple Vision Pro Sells Out | Dispatch Technology",
+        "description": "Apple Vision Pro sells out in 24 hours, beating pre-order projections 3x.",
+        "keywords": ["Apple Vision Pro","mixed reality","spatial computing","Apple"],
+        "canonical": "https://dispatch.news/technology/apple-vision-pro-sells-out-24-hours-launch",
+        "og_image": "https://dispatch.media/images/apple-vision-pro-og.jpg",
+        "no_index": false
+      },
+      "newsletter_included": false, "newsletter_id": null,
+      "revision": 1, "version_history": []
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000b6" },
+      "title": "Tesla Cuts Model 3 Prices for Third Time This Year",
+      "slug": "tesla-cuts-model-3-prices-third-time-2024",
+      "subtitle": "EV maker reduces entry-level sedan by $3,000 as competition heats up",
+      "excerpt": "Tesla slashed prices on its Model 3 sedan for the third time in 2024, dropping the base price by $3,000 as Chinese competitors gain ground in key markets.",
+      "content": "<p>Tesla Inc. cut prices on its best-selling Model 3 sedan on Thursday, reducing the entry price by $3,000 to $37,990, in what analysts describe as the company's most aggressive response yet to intensifying competition from Chinese EV makers...</p>",
+      "content_format": "html",
+      "author_id": { "$oid": "65a1000000000000000000a3" },
+      "co_authors": [],
+      "editor_id": null,
+      "category_id": { "$oid": "65a1000000000000000000c3" },
+      "tags": [],
+      "format": "news",
+      "featured_image": {
+        "media_id": { "$oid": "65a1000000000000000000m6" },
+        "url": "https://dispatch.media/images/tesla-model3-2024.jpg",
+        "alt": "Tesla Model 3 on highway",
+        "caption": null, "credit": "Tesla / AP"
+      },
+      "media_attachments": [], "gallery": [],
+      "status": "draft",
+      "published_at": null, "scheduled_at": { "$date": "2024-01-16T09:00:00Z" },
+      "created_at": { "$date": "2024-01-15T15:00:00Z" }, "updated_at": { "$date": "2024-01-15T15:00:00Z" }, "archived_at": null,
+      "is_breaking": false, "is_featured": false, "featured_position": null,
+      "is_sponsored": false, "is_paywalled": false, "breaking_expires_at": null,
+      "view_count": 0, "unique_view_count": 0, "share_count": 0,
+      "comment_count": 0, "bookmark_count": 0, "like_count": 0,
+      "estimated_reading_time": 4,
+      "related_articles": [],
+      "meta": {
+        "title": "Tesla Model 3 Price Cut 2024 | Dispatch Business",
+        "description": "Tesla cuts Model 3 prices for the third time in 2024 amid Chinese EV competition.",
+        "keywords": ["Tesla","Model 3","EV","electric vehicle","price cut"],
+        "canonical": "https://dispatch.news/business/tesla-cuts-model-3-prices-third-time-2024",
+        "og_image": "https://dispatch.media/images/tesla-model3-2024-og.jpg",
+        "no_index": false
+      },
+      "newsletter_included": false, "newsletter_id": null,
+      "revision": 1, "version_history": []
+    }
+  ],
+
+  "comments": [
+    {
+      "_id": { "$oid": "65a1000000000000000000k1" },
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "user_id": { "$oid": "65a1000000000000000000u1" },
+      "parent_comment_id": null,
+      "depth": 0,
+      "content": "This is a landmark moment for AI governance. Finally some accountability! The 47-nation consensus is broader than I expected.",
+      "status": "approved",
+      "is_pinned": true,
+      "votes_up": 234, "votes_down": 12, "reply_count": 3,
+      "moderation_flags": [],
+      "edited": false, "edited_at": null,
+      "created_at": { "$date": "2024-01-15T07:15:00Z" }, "updated_at": { "$date": "2024-01-15T07:15:00Z" }, "deleted_at": null
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000k2" },
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "user_id": { "$oid": "65a1000000000000000000u2" },
+      "parent_comment_id": { "$oid": "65a1000000000000000000k1" },
+      "depth": 1,
+      "content": "Agreed, but how will they enforce cross-border compliance? Many AI labs are in jurisdictions that didn't sign.",
+      "status": "approved",
+      "is_pinned": false,
+      "votes_up": 89, "votes_down": 3, "reply_count": 1,
+      "moderation_flags": [],
+      "edited": false, "edited_at": null,
+      "created_at": { "$date": "2024-01-15T08:02:00Z" }, "updated_at": { "$date": "2024-01-15T08:02:00Z" }, "deleted_at": null
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000k3" },
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "user_id": { "$oid": "65a1000000000000000000u1" },
+      "parent_comment_id": { "$oid": "65a1000000000000000000k2" },
+      "depth": 2,
+      "content": "Great point. The accord does include extraterritorial clauses for companies operating in signatory nations regardless of HQ location.",
+      "status": "approved",
+      "is_pinned": false,
+      "votes_up": 45, "votes_down": 1, "reply_count": 0,
+      "moderation_flags": [],
+      "edited": false, "edited_at": null,
+      "created_at": { "$date": "2024-01-15T08:45:00Z" }, "updated_at": { "$date": "2024-01-15T08:45:00Z" }, "deleted_at": null
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000k4" },
+      "article_id": { "$oid": "65a1000000000000000000b4" },
+      "user_id": { "$oid": "65a1000000000000000000u2" },
+      "parent_comment_id": null,
+      "depth": 0,
+      "content": "Bipartisan immigration reform — something I never thought I'd see in this political climate. Major milestone regardless of what happens in the House.",
+      "status": "approved",
+      "is_pinned": false,
+      "votes_up": 178, "votes_down": 42, "reply_count": 0,
+      "moderation_flags": [],
+      "edited": false, "edited_at": null,
+      "created_at": { "$date": "2024-01-11T21:10:00Z" }, "updated_at": { "$date": "2024-01-11T21:10:00Z" }, "deleted_at": null
+    }
+  ],
+
+  "bookmarks": [
+    {
+      "_id": { "$oid": "65a1000000000000000000bk1" },
+      "user_id": { "$oid": "65a1000000000000000000u1" },
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "collection": "AI Policy",
+      "note": "Great reference for my thesis on international AI governance.",
+      "tags": ["ai","policy","research"],
+      "created_at": { "$date": "2024-01-15T06:30:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000bk2" },
+      "user_id": { "$oid": "65a1000000000000000000u1" },
+      "article_id": { "$oid": "65a1000000000000000000b2" },
+      "collection": "AI Policy",
+      "note": null,
+      "tags": ["ai"],
+      "created_at": { "$date": "2024-01-13T11:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000bk3" },
+      "user_id": { "$oid": "65a1000000000000000000u2" },
+      "article_id": { "$oid": "65a1000000000000000000b4" },
+      "collection": "Politics",
+      "note": "Bookmark for the ongoing immigration debate coverage.",
+      "tags": ["politics","immigration"],
+      "created_at": { "$date": "2024-01-11T22:00:00Z" }
+    }
+  ],
+
+  "subscriptions": [
+    {
+      "_id": { "$oid": "65a1000000000000000000s1" },
+      "user_id": { "$oid": "65a1000000000000000000u1" },
+      "plan": "premium", "billing_cycle": "annual",
+      "status": "active", "amount_cents": 9900, "currency": "USD",
+      "payment_provider": "stripe",
+      "external_subscription_id": "sub_1OAbc123XYZ", "external_customer_id": "cus_1OAbc123XYZ",
+      "started_at": { "$date": "2023-06-15T00:00:00Z" },
+      "expires_at": { "$date": "2024-06-15T00:00:00Z" },
+      "trial_ends_at": null, "cancelled_at": null, "auto_renew": true,
+      "payment_history": [
+        { "amount_cents": 9900, "currency": "USD", "paid_at": { "$date": "2023-06-15T00:00:00Z" }, "invoice_id": "inv_001", "status": "success" }
+      ],
+      "created_at": { "$date": "2023-06-15T00:00:00Z" }, "updated_at": { "$date": "2023-06-15T00:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000s2" },
+      "user_id": { "$oid": "65a1000000000000000000u2" },
+      "plan": "professional", "billing_cycle": "annual",
+      "status": "active", "amount_cents": 19900, "currency": "USD",
+      "payment_provider": "stripe",
+      "external_subscription_id": "sub_2OBcd456ABC", "external_customer_id": "cus_2OBcd456ABC",
+      "started_at": { "$date": "2023-11-03T00:00:00Z" },
+      "expires_at": { "$date": "2024-11-03T00:00:00Z" },
+      "trial_ends_at": null, "cancelled_at": null, "auto_renew": true,
+      "payment_history": [
+        { "amount_cents": 19900, "currency": "USD", "paid_at": { "$date": "2023-11-03T00:00:00Z" }, "invoice_id": "inv_002", "status": "success" }
+      ],
+      "created_at": { "$date": "2023-11-03T00:00:00Z" }, "updated_at": { "$date": "2023-11-03T00:00:00Z" }
+    }
+  ],
+
+  "trending": [
+    {
+      "_id": { "$oid": "65a1000000000000000000t1" },
+      "article_id": { "$oid": "65a1000000000000000000b4" },
+      "category_id": { "$oid": "65a1000000000000000000c1" },
+      "period": "24h", "score": 1823.5, "rank_position": 1,
+      "metrics": { "views": 52300, "shares": 3120, "comments": 541, "bookmarks": 1200, "likes": 4890 },
+      "last_updated": { "$date": "2024-01-15T11:00:00Z" },
+      "expires_at": { "$date": "2024-01-16T11:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000t2" },
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "period": "24h", "score": 1523.7, "rank_position": 2,
+      "metrics": { "views": 47823, "shares": 2341, "comments": 184, "bookmarks": 891, "likes": 3210 },
+      "last_updated": { "$date": "2024-01-15T11:00:00Z" },
+      "expires_at": { "$date": "2024-01-16T11:00:00Z" }
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000t3" },
+      "article_id": { "$oid": "65a1000000000000000000b2" },
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "period": "24h", "score": 1102.4, "rank_position": 3,
+      "metrics": { "views": 31450, "shares": 1890, "comments": 312, "bookmarks": 654, "likes": 2100 },
+      "last_updated": { "$date": "2024-01-15T11:00:00Z" },
+      "expires_at": { "$date": "2024-01-16T11:00:00Z" }
+    }
+  ],
+
+  "newsletters": [
+    {
+      "_id": { "$oid": "65a1000000000000000000n1" },
+      "name": "Morning Dispatch — Jan 15, 2024",
+      "subject": "AI Summit Accord + Senate Immigration Vote | Your Morning Dispatch",
+      "preview_text": "Historic AI governance framework signed, Senate passes immigration reform...",
+      "body_html": "<html><body><h1>Good Morning</h1><p>Here are your top stories...</p></body></html>",
+      "body_text": "Good Morning\n\nHere are your top stories:\n\n1. AI Regulation Summit...",
+      "status": "sent",
+      "type": "digest",
+      "scheduled_at": { "$date": "2024-01-15T06:00:00Z" },
+      "sent_at": { "$date": "2024-01-15T06:05:00Z" },
+      "category_id": null,
+      "article_ids": [
+        { "$oid": "65a1000000000000000000b1" },
+        { "$oid": "65a1000000000000000000b4" }
+      ],
+      "target_segments": ["premium", "professional"],
+      "send_stats": {
+        "total_recipients": 24800, "delivered": 24650,
+        "opened": 14820, "clicked": 4230,
+        "unsubscribed": 18, "bounced": 150
+      },
+      "created_by": { "$oid": "65a1000000000000000000u2" },
+      "created_at": { "$date": "2024-01-14T20:00:00Z" }, "updated_at": { "$date": "2024-01-15T06:30:00Z" }
+    }
+  ],
+
+  "analytics": [
+    {
+      "_id": { "$oid": "65a1000000000000000000an1" },
+      "event_type": "view",
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "user_id": { "$oid": "65a1000000000000000000u1" },
+      "session_id": "sess_abc123", "anonymous_id": null,
+      "timestamp": { "$date": "2024-01-15T07:10:00Z" },
+      "source": "email", "referrer": "https://mail.google.com",
+      "platform": "web", "device_type": "desktop",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "country": "SG", "region": "Singapore",
+      "reading_duration_s": 385, "scroll_depth_pct": 92, "share_platform": null
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000an2" },
+      "event_type": "share",
+      "article_id": { "$oid": "65a1000000000000000000b4" },
+      "category_id": { "$oid": "65a1000000000000000000c1" },
+      "user_id": { "$oid": "65a1000000000000000000u2" },
+      "session_id": "sess_def456", "anonymous_id": null,
+      "timestamp": { "$date": "2024-01-11T21:05:00Z" },
+      "source": "social", "referrer": "https://twitter.com",
+      "platform": "web", "device_type": "mobile",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17)",
+      "country": "ES", "region": "Madrid",
+      "reading_duration_s": null, "scroll_depth_pct": null, "share_platform": "twitter"
+    },
+    {
+      "_id": { "$oid": "65a1000000000000000000an3" },
+      "event_type": "view",
+      "article_id": { "$oid": "65a1000000000000000000b1" },
+      "category_id": { "$oid": "65a1000000000000000000c2" },
+      "user_id": null,
+      "session_id": "sess_anon789",
+      "anonymous_id": "fp_a1b2c3d4e5",
+      "timestamp": { "$date": "2024-01-15T09:22:00Z" },
+      "source": "search", "referrer": "https://www.google.com",
+      "platform": "web", "device_type": "desktop",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "country": "US", "region": "New York",
+      "reading_duration_s": 210, "scroll_depth_pct": 67, "share_platform": null
+    }
+  ]
+}
