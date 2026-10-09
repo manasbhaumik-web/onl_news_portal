@@ -120,7 +120,7 @@ export const Header: React.FC = () => {
                   sideOffset={8}
                   align="start"
                 >
-                  {categories.slice(0, 10).map((cat) => (
+                  {categories.slice(0, 10).map((cat: any) => (
                     <DropdownMenu.Item key={cat._id} asChild>
                       <Link
                         to={`/category/${cat.slug}`}
@@ -275,7 +275,7 @@ export const Header: React.FC = () => {
             >
               Home
             </NavLink>
-            {categories.slice(0, 6).map((cat) => (
+            {categories.slice(0, 6).map((cat: any) => (
               <Link
                 key={cat._id}
                 to={`/category/${cat.slug}`}

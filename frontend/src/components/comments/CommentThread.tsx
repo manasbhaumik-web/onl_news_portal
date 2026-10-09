@@ -17,12 +17,12 @@ export default function CommentThread({ comment, articleId }: CommentThreadProps
 
   const handleVote = async () => {
     if (voted) return;
-    setVotesUp(prev => prev + 1);
+    setVotesUp((prev: number) => prev + 1);
     setVoted(true);
     try {
       await voteComment.mutateAsync({ commentId: comment._id, type: 'up' });
     } catch {
-      setVotesUp(prev => prev - 1);
+      setVotesUp((prev: number) => prev - 1);
       setVoted(false);
     }
   };

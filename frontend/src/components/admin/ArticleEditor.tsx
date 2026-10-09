@@ -4,7 +4,7 @@ import Image from '@tiptap/extension-image';
 import Link from '@tiptap/extension-link';
 import { Bold, Italic, List, ListOrdered, Image as ImageIcon, Link as LinkIcon, Heading2 } from 'lucide-react';
 import { useState } from 'react';
-import { Button } from '../../ui/Button';
+import { Button } from '../ui/Button';
 
 interface ArticleEditorProps {
   initialContent?: string;

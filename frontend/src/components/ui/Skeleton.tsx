@@ -108,3 +108,4 @@ export const CommentSkeleton: React.FC = () => (
     </div>
   </div>
 );
+export default Skeleton;

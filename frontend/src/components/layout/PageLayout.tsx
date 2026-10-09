@@ -56,3 +56,4 @@ export const PageLayout: React.FC<PageLayoutProps> = ({
 export const FullPageLayout: React.FC<Omit<PageLayoutProps, 'showSidebar'>> = (props) => (
   <PageLayout {...props} showSidebar={false} />
 );
+export default PageLayout;

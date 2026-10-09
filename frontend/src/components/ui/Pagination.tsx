@@ -88,3 +88,4 @@ export const Pagination: React.FC<PaginationProps> = ({
     </nav>
   );
 };
+export default Pagination;

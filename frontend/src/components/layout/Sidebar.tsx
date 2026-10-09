@@ -24,7 +24,7 @@ export const Sidebar: React.FC = () => {
           Browse Topics
         </h3>
         <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
+          {categories.map((cat: any) => (
             <Link
               key={cat._id}
               to={`/category/${cat.slug}`}

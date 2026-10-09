@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-white font-semibold text-sm uppercase tracking-widest mb-4">Categories</h3>
             <ul className="space-y-2">
-              {categories.slice(0, 7).map((cat) => (
+              {categories.slice(0, 7).map((cat: any) => (
                 <li key={cat._id}>
                   <Link
                     to={`/category/${cat.slug}`}

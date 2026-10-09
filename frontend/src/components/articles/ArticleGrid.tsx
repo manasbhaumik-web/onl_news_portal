@@ -64,3 +64,4 @@ export const ArticleGrid: React.FC<ArticleGridProps> = ({
     </div>
   );
 };
+export default ArticleGrid;

@@ -87,3 +87,4 @@ export const Avatar: React.FC<AvatarProps> = ({
     </RadixAvatar.Root>
   );
 };
+export default Avatar;

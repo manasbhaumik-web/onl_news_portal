@@ -3,7 +3,11 @@ import { useMutation } from '@tanstack/react-query';
 import axios from '../../lib/axios';
 import { Button } from '../ui/Button';
 
-export default function NewsletterWidget() {
+interface NewsletterWidgetProps {
+  compact?: boolean;
+}
+
+export default function NewsletterWidget({ compact }: NewsletterWidgetProps = {}) {
   const [email, setEmail] = useState('');
   const [success, setSuccess] = useState(false);
 
